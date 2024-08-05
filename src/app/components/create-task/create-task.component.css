@@ -1,0 +1,58 @@
+.create-task-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-task-wrapper {
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: -11px 15px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -11px 15px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -11px 15px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-container label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input-container input {
+  border: none;
+  border: 1px solid black;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+.input-container textarea {
+  border: none;
+  border: 1px solid black;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.submit-btn {
+  border: none;
+  padding: 15px 5px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 800;
+}

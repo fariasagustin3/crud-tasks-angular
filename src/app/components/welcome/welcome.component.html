@@ -1,0 +1,37 @@
+<div class="welcome-container">
+  <div class="title-container">
+    <h1>Welcome to Task Manager App!</h1>
+    <button routerLink="/create-task" class="new-task-button">New Task</button>
+    <button routerLink="/completed-tasks" class="completed-tasks-button">View Completed</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>Completed</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks; let i = index" [ngClass]="{'odd': i % 2 === 0, 'even': i % 2 !== 0}">
+        <td>{{ task.name }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.startDate }}</td>
+        <td class="taskStatus">
+          <div [ngClass]="{'completed': task.completed, 'incompleted': !task.completed}">
+            {{ task.completed ? "Completed" : "Pending" }}
+          </div>
+        </td>
+        <td>
+          <div>
+            <button [routerLink]="['/edit-task', task.id]" class="edit-button">Edit</button>
+            <button (click)="deleteTask(task.id)" class="delete-button">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

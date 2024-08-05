@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #252525;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+tr {
+  text-align: center;
+}
+
+th {
+  padding: 10px 0px;
+  background-color: rgb(91, 91, 255);
+  color: white;
+  font-weight: 500;
+}
+
+td {
+  padding: 10px 0px;
+}
+
+.odd {
+  background-color: rgb(233, 233, 233);
+}
+
+.even {
+  background-color: rgb(202, 201, 201);
+}
+
+.taskStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completed {
+  background-color: #4fe95c;
+  width: max-content;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.incompleted {
+  background-color: #e94f4f;
+  width: max-content;
+  align-self: center;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: white;
+  font-size: 12px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.new-task-button {
+  border: none;
+  background-color: teal;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.completed-tasks-button {
+  border: none;
+  background-color: burlywood;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.edit-button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: rgb(173, 173, 22);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete-button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: rgb(173, 22, 22);
+  font-weight: 700;
+  cursor: pointer;
+}

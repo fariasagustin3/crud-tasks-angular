@@ -1,0 +1,40 @@
+<div class="create-task-container">
+  <div class="create-task-wrapper">
+    <h1>Create New Task</h1>
+    <form (ngSubmit)="onSubmit()" class="form">
+      <div class="input-container">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="task.name"
+          required
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="description">Description</label>
+        <textarea
+          name="description"
+          id="description"
+          [(ngModel)]="task.description"
+          required
+        ></textarea>
+      </div>
+
+      <div class="input-container">
+        <label for="startDate">Start Date</label>
+        <input
+          type="date"
+          id="startDate"
+          name="startDate"
+          [(ngModel)]="task.startDate"
+          required
+        />
+      </div>
+
+      <button class="submit-btn" type="submit">Save</button>
+    </form>
+  </div>
+</div>
